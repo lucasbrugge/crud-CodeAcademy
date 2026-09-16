@@ -1,0 +1,29 @@
+{
+    "nextId": 40,
+    "users": [
+        {
+            "name": "Maria",
+            "age": 22,
+            "email": "maria@email.com",
+            "id": 23
+        },
+        {
+            "name": "Vitor11",
+            "age": 120,
+            "email": "lucas.brugge12@gmail.c2om",
+            "id": 37
+        },
+        {
+            "name": "<b>teste<\/b>",
+            "age": 12,
+            "email": "lucas.brugge12@gmail.com",
+            "id": 38
+        },
+        {
+            "name": "Vitor11",
+            "age": 122,
+            "email": "lucas.brugge12@gmail.com",
+            "id": 39
+        }
+    ]
+}

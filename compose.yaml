@@ -1,10 +1,10 @@
 services:
-  backend:
-    build: ./backend
+  api:
+    build: ./api
     ports:
       - "8000:80"
     volumes:
-     - ./backend/data:/app/data
+     - ./api/data:/app/data
 
   frontend:
     build: ./frontend
