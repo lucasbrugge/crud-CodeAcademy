@@ -1,29 +1,23 @@
 {
-    "nextId": 40,
+    "nextId": 46,
     "users": [
         {
-            "name": "Maria",
-            "age": 22,
-            "email": "maria@email.com",
-            "id": 23
+            "name": "Vitor",
+            "age": 11,
+            "email": "lucas.brugge12@gmail.com",
+            "id": 40
         },
         {
-            "name": "Vitor11",
-            "age": 120,
-            "email": "lucas.brugge12@gmail.c2om",
-            "id": 37
-        },
-        {
-            "name": "<b>teste<\/b>",
+            "name": "Vitor",
             "age": 12,
             "email": "lucas.brugge12@gmail.com",
-            "id": 38
+            "id": 44
         },
         {
-            "name": "Vitor11",
-            "age": 122,
+            "name": "Vitor",
+            "age": 12,
             "email": "lucas.brugge12@gmail.com",
-            "id": 39
+            "id": 45
         }
     ]
 }

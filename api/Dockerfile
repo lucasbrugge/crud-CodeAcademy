@@ -2,9 +2,11 @@ FROM php:8.3-cli
 
 WORKDIR /app
 
-COPY config/ config/
-COPY public/ public/
+
 COPY src/ src/
+COPY data/ data/
+COPY public/ public/
+COPY config/ config/
 
 EXPOSE 80
 
