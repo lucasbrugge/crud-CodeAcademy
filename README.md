@@ -1,15 +1,80 @@
-1. API é uma interface que permite dois programas conversarem, então ela é uma api pois permite a coneção entre back e front e REST um conjunto de regras que usamos para essa aplicação.
+# CRUD PHP + JavaScript
 
-2.  não sei.
+Projeto utilizado para estudo de **requisições HTTP, APIs e operações CRUD**, utilizando JavaScript no frontend e PHP no backend.
 
-3. nesse caso temos as regras de negocio no backend onde vai ser validado e retornar um erro. ela vai passar por 80% do back, index.php -> api.php -> controlers.php -> services.php até ser validada por validating.php.
+Este repositório é baseado no projeto e tutorial **PHP and JS HTTP CRUD**, criado por [Victor Raphael](https://github.com/victor-raphael17/php-and-js-http-crud). O código original foi utilizado como material de estudo, com algumas adaptações no ambiente Docker.
 
-4. retorne para o front um erro e escreva no DOM, que não foi possivel recuperar os usuarios do banco.
+## Tecnologias
 
-5. para facilitar a busca via ID e economizar recursos.
+* PHP 8.3
+* JavaScript
+* HTML e CSS
+* Bootstrap
+* Axios
+* Vite
+* Docker
+* Docker Compose
+* Apache
 
-6. DOM é nossa arvoré de elementos do html, quando ele usar render.js ele está inserindo conteudo em uma div disponivel no index.html.
+## Funcionalidades
 
-7. usamos para dizer que é um ECMAScript(ESM), onde vai permitir a divisão de código em varios arquivos, evitando que as variaveis vazem para o escopo global.
+A aplicação realiza as operações básicas de um CRUD de usuários:
 
-8. não, poderiamos rodar os dois individualmente e sem container, a ideia de usar containers é isolar as partes back e front, e facilitar subir as aplicações com comandos simples, ja montando e instalando as dependencias.
+* `GET` — listar usuários;
+* `POST` — cadastrar usuário;
+* `PUT` — atualizar usuário;
+* `PATCH` — atualizar parcialmente;
+* `DELETE` — remover usuário.
+
+O frontend realiza requisições HTTP para a API PHP, que processa as operações e persiste os dados em JSON.
+
+```text
+Frontend → Axios → API PHP → Dados JSON
+```
+
+## Estrutura
+
+```text
+crud-CodeAcademy/
+├── api/
+│   ├── config/
+│   ├── data/
+│   ├── public/
+│   ├── src/
+│   └── Dockerfile
+├── frontend/
+│   ├── src/
+│   ├── Dockerfile
+│   └── package.json
+└── compose.yaml
+```
+
+## Executando
+
+Com Docker e Docker Compose instalados:
+
+```bash
+git clone https://github.com/lucasbrugge/crud-CodeAcademy.git
+cd crud-CodeAcademy
+docker compose up --build
+```
+
+Acesse:
+
+* **Frontend:** `http://localhost:8080`
+* **API:** `http://localhost:8000/api/users`
+
+Para encerrar:
+
+```bash
+docker compose down
+```
+
+## Créditos
+
+Projeto original e material de estudo desenvolvido por **Victor Raphael**:
+
+* [Tutorial PHP and JS HTTP CRUD](https://victor-raphael17.github.io/php-and-js-http-crud/http-crud-tutorial.html)
+* [Repositório original](https://github.com/victor-raphael17/php-and-js-http-crud)
+
+Este repositório foi utilizado para **estudo, reprodução do projeto e compreensão de sua arquitetura e funcionamento**, com adaptações no ambiente de execução.
